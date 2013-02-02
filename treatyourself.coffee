@@ -13,7 +13,8 @@ class TreatYourself
       # We're the extension button running in the background.
       chrome.browserAction.onClicked.addListener (tab) =>
         console.log 'Treat Yo Self!'
-        @go_and_treat_yourself()
+        if window.confirm('Treat yo self?')
+          @go_and_treat_yourself()
     else
       # We're on the amazon page itself.
       @fetch_list()
@@ -22,8 +23,6 @@ class TreatYourself
   go_and_treat_yourself: =>
     iframe = document.body.appendChild(document.createElement('iframe'))
     iframe.src = "http://www.amazon.com/gp/registry/wishlist/ref=wish_list?reveal=unpurchased&sort=date-added&layout=compact"
-    #iframe.onload = ->
-    #  console.log 'iframe loaded!'
 
 
   fetch_list: =>
@@ -37,6 +36,8 @@ class TreatYourself
         index_to_buy = buy_buttons.length - 1
 
       @buy jQuery(buy_buttons[index_to_buy])
+    else
+      alert "There are no one-click items on your wishlist currently. Add more items to your wishlist then treat yo self!"
 
 
   buy: ($item_button) =>
