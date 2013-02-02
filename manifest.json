@@ -1,6 +1,6 @@
 {
   "name": "Treat Yo Self",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "manifest_version": 2,
   "description": "A Chrome extension that will automatically order a random one-click item from your Amazon Wishlist for you! How dangerous! Seriously, you've been warned: this will literally place an Amazon order for you. Enjoy!",
   "content_scripts": [
