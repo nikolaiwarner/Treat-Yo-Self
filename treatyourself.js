@@ -34,7 +34,7 @@
     TreatYourself.prototype.go_and_treat_yourself = function() {
       var iframe;
       iframe = document.body.appendChild(document.createElement('iframe'));
-      return iframe.src = "http://www.amazon.com/gp/registry/wishlist/ref=wish_list?reveal=unpurchased&sort=date-added&layout=compact";
+      return iframe.src = "http://www.amazon.com/gp/registry/wishlist/ref=wish_list?tag=tre0e6-20&reveal=unpurchased&sort=date-added&layout=compact";
     };
 
     TreatYourself.prototype.fetch_list = function() {

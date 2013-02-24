@@ -1,8 +1,9 @@
 {
   "name": "Treat Yo Self",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "manifest_version": 2,
   "description": "Automatically order a random one-click item from your Amazon Wishlist for yourself!",
+  "options_page": "options.html",
   "content_scripts": [
     {
       "matches": ["http://www.amazon.com/*"],
@@ -12,6 +13,7 @@
   ],
   "web_accessible_resources": ["treatyourself.js"],
   "permissions": [
+    "storage",
     "http://www.amazon.com/*"
   ],
   "background": {

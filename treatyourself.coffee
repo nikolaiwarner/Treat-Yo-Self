@@ -1,8 +1,8 @@
 # Any wishlist
-# http://www.amazon.com/registry/wishlist/#{wishlist_id}/?reveal=unpurchased&sort=date-added&layout=compact
+# http://www.amazon.com/registry/wishlist/#{wishlist_id}/?tag=tre0e6-20&reveal=unpurchased&sort=date-added&layout=compact
 
 # Current user wishlist
-# http://www.amazon.com/gp/registry/wishlist/ref=wish_list?reveal=unpurchased&sort=date-added&layout=compact
+# http://www.amazon.com/gp/registry/wishlist/ref=wish_list?tag=tre0e6-20&reveal=unpurchased&sort=date-added&layout=compact
 
 
 class TreatYourself
@@ -22,7 +22,7 @@ class TreatYourself
 
   go_and_treat_yourself: =>
     iframe = document.body.appendChild(document.createElement('iframe'))
-    iframe.src = "http://www.amazon.com/gp/registry/wishlist/ref=wish_list?reveal=unpurchased&sort=date-added&layout=compact"
+    iframe.src = "http://www.amazon.com/gp/registry/wishlist/ref=wish_list?tag=tre0e6-20&reveal=unpurchased&sort=date-added&layout=compact"
 
 
   fetch_list: =>
